@@ -1,9 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { CountyCrime, JudgeCrime, Kettlehundes, nationOne, TwoNation, TotalCrime, CrimeData} = require('../../models');
-
-const Sequelize = require('sequelize'); // Import sequelize to use its functions
-const { Op } = require('sequelize'); // Import Sequelize operators
+const { TotalCrime } = require('../../models');
 
 
 router.get('/search', async (req, res) => {

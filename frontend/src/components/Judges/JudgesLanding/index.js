@@ -101,18 +101,14 @@ function JudgesLanding () {
   const [lastName, setLastName] = useState('')
   const [county, setCounty] = useState('')
   const [offense, setOffense] = useState('')
-  const [currentPage, setCurrentPage] = useState(0)
   const [searched, setSearched] = useState(false)
   const [searchType, setSearchType] = useState(null)
-
-  const resultsPerPage = 15
 
   const handleSubmit = async e => {
     e.preventDefault()
 
     await dispatch(fetchJudgeSearchThunk( lastName, county ))
     setSearched(true)
-    setCurrentPage(0)
     setSearchType('judges')
   }
 
@@ -120,7 +116,6 @@ function JudgesLanding () {
     e.preventDefault()
     await dispatch(fetchJudgeLandingCrimeThunk({ offense }))
     setSearched(true)
-    setCurrentPage(0)
     setSearchType('crimes')
   }
 
@@ -129,7 +124,6 @@ function JudgesLanding () {
     setCounty('')
     setOffense('')
     setSearched(false)
-    setCurrentPage(0)
   }
 
   return (

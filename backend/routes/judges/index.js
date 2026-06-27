@@ -1,11 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const { Judge, JudgeCrime, TotalCrime, CountyCrime } = require('../../models');
+const { Judge, JudgeCrime, TotalCrime } = require('../../models');
 
-const sequelize = require('sequelize'); // Import sequelize to use its functions
 const { Op } = require('sequelize'); // Import Sequelize operators
-const { off } = require('process');
 
 const countyMap = {
   ATL: "Atlantic",
@@ -31,11 +29,6 @@ const countyMap = {
   WAR: "Warren"
 };
 
-const clean = (obj) => {
-  return Object.fromEntries(
-    Object.entries(obj).filter(([_, v]) => v !== undefined && v !== "")
-  );
-}
 // Example route
 router.get('/all/:county', async (req, res) => {
   const countyName = req.params.county;

@@ -70,7 +70,6 @@ if (e.key === 'Enter' && activeIndex >= 0) {
     if (!loaded) {
     return <p>wait a bloody minute...</p>;
   }
-const slugify = (name) => name.id;
   return (
     <div className="crimeSearchWrapper" ref={wrapperRef}>
       <input

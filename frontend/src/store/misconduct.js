@@ -43,8 +43,6 @@ const initialState = {}
 
 const misconductReducer = (state = initialState, action) => {
 
-    let newState = {};
-
     switch (action.type) {
 
 
