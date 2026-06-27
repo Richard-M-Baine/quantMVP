@@ -1,0 +1,186 @@
+/* JudgesLanding.css */
+
+.mainJudgesLanding {
+  min-height: calc(100vh - 60px);
+  background: radial-gradient(ellipse at 50% 40%, #ddeeff 0%, #f5f8ff 55%, #ffffff 100%);
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+.judgeLandingCountyDropdown{
+  width: 120px;
+  height: 30px;
+}
+/* Page header */
+.judgesLanding__heading {
+  margin: 0 0 0.25rem;
+  font-size: 22px;
+  font-weight: 500;
+  color: #1a1a2e;
+  text-align: center;
+}
+
+.judgesLanding__subheading {
+  margin: 0 0 2.5rem;
+  font-size: 16px;
+  color: #5a6a7e;
+  text-align: center;
+}
+
+/* Two search panels side by side */
+.judgesLanding__formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  max-width: 720px;
+  margin: 0 auto 1.25rem;
+}
+
+.judgesLanding__panel {
+  background: rgba(255, 255, 255, 0.85);
+  border: 0.5px solid #c8d8ea;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+}
+
+.judgesLanding__panelLabel {
+  margin: 0 0 1rem;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6b7f96;
+}
+
+.judgesLanding__panelHint {
+  margin: 0 0 1rem;
+  font-size: 12px;
+  color: #7a8fa3;
+  line-height: 1.5;
+}
+
+/* Form fields */
+.judgesLanding__field {
+  margin-bottom: 0.75rem;
+}
+
+.judgesLanding__field label {
+  display: block;
+  font-size: 12px;
+  color: #5a6a7e;
+  margin-bottom: 4px;
+}
+
+.judgesLanding__field input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+  padding: 7px 10px;
+  border: 0.5px solid #c0cfe0;
+  border-radius: 7px;
+  background: #fff;
+  color: #1a1a2e;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.judgesLanding__field input:focus {
+  border-color: #7aafd4;
+}
+
+/* Search buttons */
+.judgesLanding__submitBtn {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 7px;
+  border: 0.5px solid #7aafd4;
+  background: #e8f2fb;
+  color: #0c447c;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.judgesLanding__submitBtn:hover {
+  background: #d4e8f7;
+}
+
+/* Results panel */
+.judgesLanding__results {
+  max-width: 720px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.85);
+  border: 0.5px solid #c8d8ea;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+}
+
+.judgesLanding__resultsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.judgesLanding__resultsLabel {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6b7f96;
+}
+
+.judgesLanding__clearBtn {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 0.5px solid #c0cfe0;
+  background: none;
+  color: #6b7f96;
+  cursor: pointer;
+}
+
+.judgesLanding__clearBtn:hover {
+  background: #f0f5fa;
+}
+
+/* Result rows */
+.judgesLanding__resultList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.judgesLanding__resultList li a,
+.judgesLanding__resultList li > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 12px;
+  border-radius: 7px;
+  background: #f4f8fd;
+  text-decoration: none;
+  color: #0c447c;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.12s;
+}
+
+.judgesLanding__resultList li a:hover {
+  background: #e4f0fa;
+}
+
+.judgesLanding__resultMeta {
+  font-size: 12px;
+  color: #6b7f96;
+  font-weight: 400;
+}
+
+.judgesLanding__empty {
+  font-size: 13px;
+  color: #7a8fa3;
+  margin: 0;
+}

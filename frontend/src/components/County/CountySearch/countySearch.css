@@ -1,0 +1,45 @@
+.countySearchResultButtons{
+width: 100px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background: #ddd;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.countySearchResultButtons:hover{
+background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.countySearchResultButtonsBottom{
+    width: 100px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background: #ddd;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.spanCountySearch{
+    margin-top: 12px;
+}

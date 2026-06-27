@@ -1,0 +1,38 @@
+1 home - minimum productive done
+
+2- county
+
+county main landing screen - MPD
+
+police misconduct section - MPD - refactor backend so it returns stuff in a nice way and links and shit
+
+- 
+
+individiual county landing screen - MPD
+
+search crimes in x county
+
+
+
+individual county search
+3 - judges
+
+judge overall landing page
+
+search for individual judge
+
+individual judge landing page 
+
+compare judge to other judges (based on crime)
+
+4- crimes
+
+compare crime to other crimes sentencing data
+
+compare crime via county
+
+compare crime via judge
+
+
+columns showing total number of cases of incarceration above 0 and probation as well.  Basically see probation percentage and incarceration percentage
+

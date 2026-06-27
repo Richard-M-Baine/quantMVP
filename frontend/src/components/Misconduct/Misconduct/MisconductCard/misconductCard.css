@@ -1,0 +1,30 @@
+.misconductCardMainDiv {
+  border: 1px solid #e0e0e0d0; /* light gray border */
+  border-radius: 8px;        /* soft rounded corners */
+  padding: 1rem;
+  margin-bottom: 1rem;       /* space between cards */
+  background-color: whitesmoke;    /* clean white card look */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* subtle shadow */
+  transition: box-shadow 0.2s ease;
+}
+
+.misconductCardMainDiv:hover {
+  background-color: #ebebeb; /* slightly darker gray */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.modalOpeningMisconductCard {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: blue;                
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+}
+
+.modalOpeningMisconductCard:hover {
+  color: darkblue;               
+}

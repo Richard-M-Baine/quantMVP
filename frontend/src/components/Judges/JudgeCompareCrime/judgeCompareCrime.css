@@ -1,0 +1,231 @@
+.judgecompareCrime {
+  padding: 1rem;
+}
+
+/* Header Section */
+.compareHeaderDiv {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.compareHeaderDiv h2 {
+  margin-bottom: 1.5rem;
+  color: #000;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+}
+
+/* Search + Sort Section */
+.search-sort-controls {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.search-sort-controls input {
+  padding: 0.625rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 320px;
+}
+
+.sort-buttons {
+  margin-top: 0.5rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #DAA520, #B8860B);
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #B8860B, #9A7209);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(218, 165, 32, 0.3);
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.btn-secondary:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sort-btn {
+  padding: 0.625rem 1.25rem;
+  background: #fff;
+  color: #000;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.25rem;
+  min-width: 180px;
+}
+
+.sort-btn:hover {
+  border-color: #DAA520;
+  background: #fefefe;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(218, 165, 32, 0.2);
+}
+
+.sort-btn.active {
+  background: linear-gradient(135deg, #DAA520, #B8860B);
+  color: #fff;
+  border-color: #B8860B;
+  font-weight: 600;
+}
+
+/* Grid + Card */
+.judge-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.judge-card {
+  border: 8px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .compareHeaderDiv,
+  .search-sort-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn,
+  .sort-btn,
+  .search-sort-controls input {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+.compareSectionJudgeCompareCrime {
+  display: grid;
+  /* Creates a 5-column grid:
+    - Offense: takes up remaining space (flexes)
+    - Total Cases: 15% width
+    - Avg Incarceration: 15% width
+    - Avg Probation: 15% width
+    - State Data Column: 25% width (adjust as needed for state averages)
+  */
+  grid-template-columns: 1fr 15% 15% 15% 25%;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Header row styling */
+.headerOfComparisonJudgeCompareCrime {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+  border-bottom: 2px solid #DAA520;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 50px; /* Ensures headers align if text wraps */
+}
+
+/* Align the text of the Offense header/cells to the left for better readability */
+.compareSectionJudgeCompareCrime > div:nth-child(5n+1) {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+/* Individual Data Cells */
+.compareCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.75rem 0.5rem;
+  font-size: 1rem;
+  border-bottom: 1px solid #eee;
+  min-height: 60px; /* Keeps rows uniform */
+}
+
+/* Sub-layout for State Data column to keep it clean */
+.stateDataContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: #666;
+  background: #f9f9f9;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.stateDataRow {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #ddd;
+}
+
+.stateDataRow:last-child {
+  border-bottom: none;
+}
+
+/* Responsive adjustment */
+@media (max-width: 1024px) {
+  .compareSectionJudgeCompareCrime {
+    grid-template-columns: 1fr; /* Stack vertically on small screens */
+    gap: 1.5rem;
+  }
+  
+  .headerOfComparisonJudgeCompareCrime {
+    min-height: auto;
+    border-bottom: 2px solid #DAA520;
+  }
+  
+  .compareCell {
+    min-height: auto;
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 0.25rem;
+  }
+}
+

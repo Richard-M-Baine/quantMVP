@@ -1,0 +1,95 @@
+.mainCrimeLanding {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.crimeLandingHeader {
+  text-align: center;
+}
+.crimeLandingHeaderBelow{
+  text-align: center;
+}
+
+/* Charts grid */
+.crimeLandingGraphsSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.crimeLandingGraphDiv {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 100%;
+  height: 320px;
+}
+
+.crimeLandingGraphDiv h3 {
+  text-align: center;
+  margin-top: 0;
+  color: #333;
+}
+
+.crimeLandingGraphDiv h5 {
+  text-align: center;
+  margin: 0.15rem 0;
+  color: #777;
+  font-weight: 400;
+}
+
+/* line chart + pie chart get the full row since they carry more detail */
+.crimeLandingGraphDivWide {
+  grid-column: 1 / -1;
+  height: 400px;
+}
+
+/* Stats section */
+.crimeLandingSummarySection {
+  text-align: center;
+  background: #fafafa;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.crimeLandingSummaryGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.crimeLandingSummaryCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  min-width: 180px;
+}
+
+.crimeLandingSummaryLabel {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #555;
+  margin: 0 0 0.25rem 0;
+}
+
+.crimeLandingSummaryValue {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .crimeLandingGraphsSection {
+    grid-template-columns: 1fr;
+  }
+}

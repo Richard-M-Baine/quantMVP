@@ -1,0 +1,120 @@
+/* ── Root container ─────────────────────────── */
+.mainlandingHome {
+    max-width: vw;
+    margin: 0 auto;
+    padding: 20px;
+
+    background: radial-gradient(ellipse at 50% 40%, #f5fafe 0%, #f5f8ff 55%, #ffffff 100%);
+}
+
+/* ── Hero / intro block ─────────────────────── */
+.mainlandingHome > h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.mainlandingHome > p {
+    text-align: center;
+    max-width: 940px;
+    margin: 0 auto 0.5rem auto;
+    color: #2b2b2b;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+/* The attorney paragraph sits inside the inner div — target it the same way */
+.mainlandingHome > div > p {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto 0.5rem auto;
+    color: #2b2b2b;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+/* ── Critical Questions / Methodology block ─── */
+.mainlandingHome > div > div:first-of-type {
+     text-align: center;
+    max-width: 94vw;
+    color: #2b2b2b;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-bottom: 2.5rem;
+}
+
+/* ── Random Crime Spotlight ─────────────────── */
+.outerDivRandomCrimeLanding {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+}
+
+.randomcrimeheader {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.randomCrimeSectionLanding {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 2vw 2vw;
+}
+
+.countyRandomCrimeLanding {
+    flex: 1;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Link cards ─────────────────────────────── */
+.linkSectionLandingDivMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2vw;
+    padding: 0;          /* let .mainlanding handle outer padding */
+}
+
+.linkSectionLandingDiv {
+    flex: 1 1 30%;
+    max-width: 30%;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.linkSectionLandingDiv:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.linkSectionLandingDiv h3,
+.linkSectionLandingDiv h4 {
+    margin: 0.5rem 0;
+    min-height: 2.5em;
+}
+
+.linkSectionLandingDiv img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: auto;
+    border-radius: 8px;
+}

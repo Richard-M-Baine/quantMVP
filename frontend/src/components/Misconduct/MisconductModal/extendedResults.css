@@ -1,0 +1,88 @@
+/* MisconductModal.css */
+
+.misconductModal {
+  background: var(--color-background-primary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: 12px;
+  width: min(50vw, 560px);
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.misconductModalHeader {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 0.5px solid var(--color-border-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.misconductModalTitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.misconductModalBody {
+  overflow-y: auto;
+  flex: 1;
+  padding: 0.25rem 0;
+}
+
+.misconductModalGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.misconductModalCell {
+  padding: 0.7rem 1.5rem;
+  border-bottom: 0.5px solid var(--color-border-tertiary);
+  border-right: 0.5px solid var(--color-border-tertiary);
+}
+
+.misconductModalCellLastRow {
+  border-bottom: none;
+}
+
+.misconductModalCellRight {
+  border-right: none;
+}
+
+.misconductModalLabel {
+  margin: 0 0 2px;
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.misconductModalValue {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.misconductModalFooter {
+  padding: 0.875rem 1.5rem;
+  border-top: 0.5px solid var(--color-border-tertiary);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.misconductModalCloseBtn {
+  font-size: 13px;
+  padding: 6px 16px;
+  border-radius: 8px;
+  border: 0.5px solid var(--color-border-secondary);
+  background: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.misconductModalCloseBtn:hover {
+  background: var(--color-background-secondary);
+}

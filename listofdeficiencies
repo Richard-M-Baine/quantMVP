@@ -1,0 +1,62 @@
+<!-- 
+home - minimum of 10 for each county for the random spotlight -- done
+home - minor to moderate styling - done
+
+county landing - test each site connects to a county - done
+county landing - style unstyled buttons - done
+county landing - style sample crime to be wider including crime spotlight part - done
+
+county Individual - confirm testing works for 
+names - done
+numbers incar and prob clear
+minor styling - clear
+change 'no data' to something better - done
+see if search should include from beginning or as is (my preference) done keep it as is. Done
+
+county Compare
+
+eerily clear?
+
+CompareCountiesSelection
+
+klar all searches klar done
+
+MisconductSearch
+
+spruced up css - done
+altered models slightly to ensure all data populated in boxes done
+confirmed search . . . altered semi significantly - done
+
+alter model to make edges look nicer / basic cssing - done
+
+
+judges landing
+css styling done - thank you claude - done
+judge name ok - done
+fix search judge by county - done
+
+
+judge compare crime
+get rid of pointless button - done
+
+CompareJudgesSelection
+go back button goes to dead link - done
+
+CrimeJudgeCompare
+centered h1 div and minor styling - done
+altered some class names to be specific to page - done
+
+CrimeLanding
+klar - already taken care of - done
+
+CrimeIndividual
+figure out why pie graph isnt showing up for some crimes - done
+
+pie data is undefined sometimes for values - done
+
+Spiel
+changed some wording
+
+ -->
+
+

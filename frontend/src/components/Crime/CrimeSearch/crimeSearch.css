@@ -1,0 +1,39 @@
+.crimeSearchWrapper {
+  position: relative;
+  max-width: 360px;
+  margin: 0 auto 1.5rem;
+}
+
+.crimeSearchInput {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.crimeSearchResults {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0;
+  z-index: 10;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.crimeSearchResults li {
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+}
+
+.crimeSearchResults li:hover,
+.crimeSearchResultActive {
+  background: #f3f3f8;
+}

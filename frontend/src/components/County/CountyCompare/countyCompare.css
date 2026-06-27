@@ -1,0 +1,208 @@
+/* ============================================================
+   countyCompare.css — Judicial Gold & Black Theme
+   Matches judgeCompareCrime aesthetic
+   ============================================================ */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+ 
+/* ── Page Wrapper ─────────────────────────────────────────── */
+.county-compare-page {
+  padding: 2rem;
+  font-family: 'Source Sans 3', sans-serif;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+ 
+/* ── Page Headings ────────────────────────────────────────── */
+.county-compare-page h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+}
+ 
+.offense-header-county-compare {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.offense-header-county-compare h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+ 
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  margin-bottom: 2rem;
+}
+ 
+/* Centre the second heading block */
+.county-compare-page > h1 {
+  display: block;
+  text-align: center;
+}
+
+
+ 
+/* ── Dual List Wrapper ────────────────────────────────────── */
+.dual-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.75rem auto;
+  padding: 1.75rem 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  max-width: 680px;
+  width: 100%;
+}
+ 
+/* ── Section Title inside DualList ───────────────────────── */
+.dual-list h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.25rem;
+  border-bottom: 2px solid #DAA520;
+  padding-bottom: 0.4rem;
+  width: 100%;
+  text-align: center;
+}
+ 
+/* ── Lists Row ────────────────────────────────────────────── */
+.lists {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+ 
+/* ── Select Boxes ─────────────────────────────────────────── */
+select {
+  width: 220px;
+  height: 220px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.95rem;
+  color: #222;
+  background: #fdfdfd;
+  padding: 0.25rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+  cursor: pointer;
+}
+ 
+select:focus {
+  border-color: #DAA520;
+  box-shadow: 0 0 0 3px rgba(218, 165, 32, 0.18);
+}
+ 
+select option {
+  padding: 0.35rem 0.5rem;
+  border-radius: 3px;
+}
+ 
+select option:checked,
+select option:hover {
+  background: linear-gradient(135deg, #DAA520, #B8860B);
+  color: #fff;
+}
+ 
+/* Column labels above selects */
+.lists-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #888;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+ 
+/* ── Arrow Buttons ────────────────────────────────────────── */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+ 
+.buttons button {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+ 
+.buttons button:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+ 
+/* ── Submit Button ────────────────────────────────────────── */
+.dual-list > button {
+  margin-top: 1.25rem;
+  padding: 0.75rem 2.5rem;
+  background: linear-gradient(135deg, #DAA520, #B8860B);
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+ 
+.dual-list > button:hover {
+  background: linear-gradient(135deg, #B8860B, #9A7209);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(218, 165, 32, 0.35);
+}
+ 
+.dual-list > button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+ 
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .lists {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .buttons {
+    flex-direction: row;
+  }
+ 
+  select {
+    width: 100%;
+    max-width: 300px;
+  }
+ 
+  .dual-list {
+    padding: 1.25rem 1rem;
+  }
+}
