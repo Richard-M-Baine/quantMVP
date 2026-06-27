@@ -64,16 +64,10 @@ router.get('/all/:county', async (req, res) => {
 
 router.get('/search', async (req, res) => {
   const { lastName, county, offense } = req.query;
-  console.log('i am county ',county)
 
   const countyKey = Object.keys(countyMap).find(key => 
       countyMap[key].toLowerCase() === county.toLowerCase()
     );
-
-  console.log(lastName, countyKey, offense);
-
-
-
 
     // Judge search conditions
     const judgeWhere = {};
@@ -198,7 +192,6 @@ router.get('/crime/all/:id', async (req, res) => {
     raw: true
   })
 
-  console.log('im judgeList! ',judgeList)
 res.json(judgeList)
 })
 

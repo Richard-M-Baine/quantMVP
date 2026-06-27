@@ -39,7 +39,6 @@ function CountySearch({ county, redirect = false }) {
   };
 
   const totalResults = countyList.length;
-  console.log(totalResults, 'i am total results')
   const totalPages = Math.ceil(totalResults / resultsPerPage);
   const startIndex = currentPage * resultsPerPage;
   const endIndex = startIndex + resultsPerPage;

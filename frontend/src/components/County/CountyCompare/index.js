@@ -13,8 +13,6 @@ function DualListSelector({ title, items, onSubmit }) {
   const [selected, setSelected] = useState([]);
   const [chosen, setChosen] = useState([]);
 
-  console.log("i am selected counties ", selected);
-
   // Track what’s selected in each box
   const handleAvailableSelect = (e) => {
     const options = Array.from(e.target.selectedOptions, (o) =>
@@ -81,8 +79,6 @@ function DualListSelectorJudges({ title, items, onSubmit }) {
   const [availableJudges, setAvailableJudges] = useState(items);
   const [selectedJudges, setSelectedJudges] = useState([]);
   const [chosenJudges, setChosenJudges] = useState([]);
-
-  console.log("i am selected judges ", selectedJudges);
 
   const handleAvailableSelect = (e) => {
     const options = Array.from(e.target.selectedOptions, (o) =>
@@ -198,4 +194,3 @@ export default function CountyCompare() {
     )
   );
 }
-

@@ -13,10 +13,7 @@ app.use('/api', mainRoutes);
 // Sync database and start server
 sequelize.sync({ force: false })
   .then(() => {
-    console.log('Database synced');
-    app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
-    });
+    app.listen(PORT);
   })
   .catch(err => {
     console.error('Unable to sync database:', err);

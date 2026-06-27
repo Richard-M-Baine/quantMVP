@@ -28,8 +28,6 @@ function CrimeSearch() {
     const ALL_CRIMES = useSelector(state => state.misc || []);
 
 
-console.log("i am all crimes ",ALL_CRIMES)
-
 useEffect(() => {
   if (!ALL_CRIMES || !query.trim()) {
     setMatches([]);
@@ -55,9 +53,6 @@ useEffect(() => {
   }, []);
 
 const goToCrime = (crime) => {
-  console.log(crime.id);
-  console.log(`/crimes/${crime.id}`);
-
   navigate(`/crimes/${crime.id}`);
 };
 

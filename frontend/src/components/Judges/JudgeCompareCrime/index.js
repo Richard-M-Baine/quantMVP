@@ -43,11 +43,6 @@ function JudgeCompareCrime() {
     return <p>wait a bloody minute...</p>;
   }
 
-  console.log(crime, "i am total Crime List")
-  console.log(crimeList, "i am Judge Crime List")
-
-
-
   return (
   <div className="judgecompareCrime">
     <div className="compareHeaderDiv">

@@ -71,7 +71,6 @@ router.get('/judge', async (req, res) => {
 router.get('/judge/:id', async (req, res) => {
   try {
     const crimeId = req.params.id;
-    console.log('i am crimeId:', crimeId);
 
     const theCrime = await TotalCrime.findByPk(crimeId)
 
@@ -110,7 +109,6 @@ const averageIncarceration = averagePercentages(
 const averageProbation = averagePercentages(  crime.crimeData.probationPercentage)
 
 const result = crime.toJSON();
-console.log('i am result ',result)
 
 result.crimeData.averageIncarceration = averageIncarceration;
 result.crimeData.averageProbation = averageProbation;

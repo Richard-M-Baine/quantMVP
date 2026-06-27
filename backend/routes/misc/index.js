@@ -8,12 +8,10 @@ const { Op } = require('sequelize'); // Import Sequelize operators
 
 router.get('/search', async (req, res) => {
   try {
-    console.log('look at me in search')
     const listOfCrimes = await TotalCrime.findAll({
       attributes: ['Offense', 'id'],
       raw: true
     })
-    console.log(listOfCrimes)
   
     res.json(listOfCrimes);     
   } catch (error) {

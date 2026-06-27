@@ -198,10 +198,6 @@ router.get('/crimesearch', async (req, res) => {
 
 
 
-    if (countyCrimeSearchResults.length === 0) {
-      console.log('Warning: No CountyCrime results found for query:', countyCrimeWhere);
-    }
-
     // Return all data including the unique offenses array
     const returnArray = [
     
@@ -296,11 +292,6 @@ const stateSearch = normalizeState(land);
       dataSet: "TwoNation",
       ...r.toJSON()
     }));
-
-    if (kettleResults){console.log(kettleResults.length)}
-
-    if (nationOneResults){console.log(nationOneResults.length)}
-    if (nationTwoResults){console.log(nationTwoResults.length)}
 
     res.json([
       ...normalizedKettle,
@@ -434,8 +425,6 @@ const offense = countyCrime.Offense
         Offense: offense
       }
     })
-
-    console.log(countyCrimes.length, judgeCrimes.length)
 
     res.json({ countyCrimes, judgeCrimes });
   } catch (err) {

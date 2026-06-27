@@ -56,7 +56,6 @@ function CrimeIndividual() {
   const grandTotalIncarceration = useSelector(state => state.crime?.crimeData?.averageIncarceration)
 
   const grandTotalProbation = useSelector(state => state.crime?.crimeData?.averageProbation)
-console.log('i am what i want ',grandTotalIncarceration, grandTotalProbation)
   // summarized stuff
 
   const averageIncarceration = useSelector(state => state.crime?.AverageIncarcerationDays
@@ -137,8 +136,6 @@ console.log('i am what i want ',grandTotalIncarceration, grandTotalProbation)
       value: grandTotalProbation
     }
   ];
-
-  console.log(pieData)
 
   const COLORS = ["#8884d8", "#82ca9d"];
 

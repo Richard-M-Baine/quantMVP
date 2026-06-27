@@ -35,8 +35,6 @@ function CrimeJudgeCompare() {
     const [selectedJudges, setSelectedJudges] = useState([]);
     const [chosenJudges, setChosenJudges] = useState([]);
   
-    console.log("i am selected judges ", selectedJudges);
-  
     const handleAvailableSelect = (e) => {
       const options = Array.from(e.target.selectedOptions, (o) =>
         JSON.parse(o.value)

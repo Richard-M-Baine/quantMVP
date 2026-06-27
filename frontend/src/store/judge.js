@@ -53,8 +53,6 @@ export const fetchJudgesBasedOnCrimesThunk = (id) => async dispatch => {
 
 
 export const fetchJudgeSearchThunk = (lastName, county) => async dispatch => {
-    console.log("lastName:", lastName);
-  console.log("county:", county);
   const queryParams = new URLSearchParams({
   lastName,
   county
