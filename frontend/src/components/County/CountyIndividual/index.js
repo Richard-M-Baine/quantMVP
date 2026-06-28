@@ -29,7 +29,7 @@ function CountyIndividual() {
 
   const toggleJudges = () => setJudgesVisible(!judgesVisible);
 
-  if (!loaded) return <div className="loading">Loading {county} County data...</div>;
+  if (!loaded) return <div className="loading">Loading {county} County data... wait a bloody minute</div>;
 
   return (
     <div className="mainCountyLanding">
@@ -95,7 +95,7 @@ function CountyIndividual() {
                   </Link>
                 </div>
               ))
-            ) : <p>No judges found for {county} County.</p>}
+            ) : <p>No judges found for {county} County.  If this is a bug contact and yell at me.</p>}
           </div>
         </div>
       </aside>

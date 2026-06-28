@@ -33,18 +33,14 @@ export const store = configureStore({
     getDefaultMiddleware({
       serializableCheck: false, // redux-persist writes non-serializable values
     }),
-  // Add the devTools configuration block below:
-  devTools: {
+  devTools: process.env.NODE_ENV !== "production" && {
     actionSanitizer: (action) => {
-      // Hide Recharts noise from the DevTools action history log
-      if (action.type.startsWith('legend/') || action.type.includes('Brush')) {
-        return { ...action, type: `<<RECHARTS_NOISE: ${action.type}>>` }; 
-        // Or just return null to completely hide it
+      if (action.type.startsWith("legend/") || action.type.includes("Brush")) {
+        return { ...action, type: `<<RECHARTS_NOISE: ${action.type}>>` };
       }
       return action;
     },
     stateSanitizer: (state) => {
-      // If Recharts injected ghost keys into the root object of DevTools, hide them
       if (state && (state.graphicalItems || state.brush || state.legend)) {
         const { graphicalItems, brush, legend, ...actualAppState } = state;
         return actualAppState;

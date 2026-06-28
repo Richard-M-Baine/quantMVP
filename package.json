@@ -1,5 +1,4 @@
 {
-  "dependencies": {
-    "@emailjs/browser": "^4.4.1"
-  }
+  "name": "quantjustice-root",
+  "private": true
 }

@@ -75,7 +75,7 @@ function CountySearch({ county, redirect = false }) {
         {!searched ? (
           <p>Enter search criteria above to find misconduct cases.</p>
         ) : totalResults === 0 ? (
-          <p>No misconduct cases found matching your search criteria.</p>
+          <p>No cases found.  If you think this is a bug contact and yell at me.</p>
         ) : (
           <>
             <div className="results-header">
