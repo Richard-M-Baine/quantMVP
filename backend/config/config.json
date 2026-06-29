@@ -7,8 +7,10 @@
     "dialect": "sqlite",
     "storage": "./myapp.db"
   },
+ 
   "production": {
     "dialect": "sqlite",
-    "storage": "./prod.db"
+    "storage": "./database.sqlite"
   }
 }
+
