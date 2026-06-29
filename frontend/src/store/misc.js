@@ -1,3 +1,5 @@
+import { apiFetch } from '../api';
+
 const offenseList = 'misc/listOfCrimes'
 
 
@@ -13,7 +15,7 @@ const getOffenseListAction = payload => {
 
 export const fetchListOfCrimesThunk = () => async dispatch => {
 
-    const response = await fetch('/api/misc/search', {
+    const response = await apiFetch('/api/misc/search', {
         method: 'GET',
         credentials: 'include', // Ensures cookies are sent with the request
         headers: {

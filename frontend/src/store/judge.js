@@ -1,3 +1,6 @@
+
+import { apiFetch } from '../api';
+
 const allJudgesInCounty = 'judge/judgeList'
 const judgeSearch = 'judge/search'
 const judgeCrime = 'judge/crime'
@@ -28,7 +31,7 @@ const getJudgesSentenedCrimeAction = payload => {
 
 export const fetchJudgesBasedOnCrimesThunk = (id) => async dispatch => {
 
-    const response = await fetch(`/api/judges/crime/${id}`, {
+    const response = await apiFetch(`/api/judges/crime/${id}`, {
         method: 'GET',
         credentials: 'include', // Ensures cookies are sent with the request
         headers: {
@@ -58,7 +61,7 @@ export const fetchJudgeSearchThunk = (lastName, county) => async dispatch => {
   county
 }).toString();
 
-const response = await fetch(`/api/judges/search?${queryParams}`, {
+const response = await apiFetch(`/api/judges/search?${queryParams}`, {
   method: 'GET',
   credentials: 'include',
   headers: {
@@ -78,7 +81,7 @@ const response = await fetch(`/api/judges/search?${queryParams}`, {
 // all groups
 export const fetchAllJudgesInCountyThunk = (county) => async dispatch => {
 
-    const response = await fetch(`/api/judges/all/${county}`,{
+    const response = await apiFetch(`/api/judges/all/${county}`,{
      method: 'GET',
         credentials: 'include', // Ensures cookies are sent with the request
         headers: {

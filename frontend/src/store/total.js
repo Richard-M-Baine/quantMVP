@@ -1,3 +1,5 @@
+import { apiFetch } from '../api';
+
 const JudgeCrime = 'total/crime'
 
 
@@ -12,7 +14,7 @@ const getJudgeLandingCrimeAction = payload => {
 export const fetchJudgeLandingCrimeThunk = (searchGroup) => async dispatch => {
     const queryParams = new URLSearchParams(searchGroup).toString();
 
-    const response = await fetch(`/api/crimes/judge?${queryParams}`, {
+    const response = await apiFetch(`/api/crimes/judge?${queryParams}`, {
         method: 'GET',
         credentials: 'include',
         headers: {

@@ -1,12 +1,22 @@
 const express = require('express');
 const sequelize = require('./config/database');
 const mainRoutes = require('./routes'); // Import the central router
+const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.json());
 
+
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://dependable-clarity.up.railway.app'
+  ],
+  credentials: true
+}));
+
+app.use(express.json());
 // Mount the central router
 app.use('/api', mainRoutes);
 

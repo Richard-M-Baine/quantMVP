@@ -1,3 +1,6 @@
+
+import { apiFetch } from '../api';
+
 const LANDING = 'county/landing'
 const Individual = 'county/individual'
 const Search = 'county/search'
@@ -53,7 +56,7 @@ export const fetchCountyCrimeDataThunk = (county, crimeId) => async dispatch => 
         // Make the server call to the backend route
 
      
-        const response = await fetch(`/api/county/${county}/crimeId/${crimeId}`, {
+        const response = await apiFetch(`/api/county/${county}/crimeId/${crimeId}`, {
             
             method: 'GET',
             credentials: 'include',  // Send cookies if needed
@@ -82,7 +85,7 @@ export const fetchCountyCrimeDataThunk = (county, crimeId) => async dispatch => 
 // county Landing
 export const fetchCountyLandingSampleThunk = () => async dispatch => {
 
-    const response = await fetch('/api/county/landing', {
+    const response = await apiFetch('/api/county/landing', {
         method: 'GET',
         credentials: 'include', // Ensures cookies are sent with the request
         headers: {
@@ -108,7 +111,7 @@ export const fetchCountyLandingSampleThunk = () => async dispatch => {
 // all groups
 export const fetchIndividualCountyJudgesThunk = (county) => async dispatch => {
 
-    const response = await fetch(`/api/county/individual/${county}`, {
+    const response = await apiFetch(`/api/county/individual/${county}`, {
         method: 'GET',
         credentials: 'include', // Ensures cookies are sent with the request
         headers: {
@@ -137,7 +140,7 @@ export const fetchCountyCrimeSearchThunk = (payload) => async dispatch => {
     // Turn payload object into query string
     const queryString = new URLSearchParams(payload).toString();
 
-    const response = await fetch(`/api/county/crimesearch?${queryString}`, {
+    const response = await apiFetch(`/api/county/crimesearch?${queryString}`, {
         method: 'GET',
         credentials: 'include',
         headers: {

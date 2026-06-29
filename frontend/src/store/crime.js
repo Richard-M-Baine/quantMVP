@@ -1,3 +1,6 @@
+
+import { apiFetch } from '../api';
+
 const JUDGESELECTION = 'crime/selection'
 const CRIMELANDING = 'crime/landing'
 const CRIMEINDIVIDUAL = 'crime/individual'
@@ -30,7 +33,7 @@ const getCrimeIndividualAction = payload => {
 
 export const fetchCrimeIndividualSampleThunk = (id) => async dispatch => {
 
-    const response = await fetch(`/api/crimes/individual/${id}`, {
+    const response = await apiFetch(`/api/crimes/individual/${id}`, {
         method: 'GET',
         credentials: 'include', // Ensures cookies are sent with the request
         headers: {
@@ -54,7 +57,7 @@ export const fetchCrimeIndividualSampleThunk = (id) => async dispatch => {
 // county Landing
 export const fetchCrimeLandingSampleThunk = () => async dispatch => {
 
-    const response = await fetch('/api/crimes/landing', {
+    const response = await apiFetch('/api/crimes/landing', {
         method: 'GET',
         credentials: 'include', // Ensures cookies are sent with the request
         headers: {
@@ -79,7 +82,7 @@ export const fetchCrimeLandingSampleThunk = () => async dispatch => {
 // all groups
 export const fetchAllJudgesForCrimeThunk= (id) => async dispatch => {
 
-    const response = await fetch(`/api/judges/crime/all/${id}`,{
+    const response = await apiFetch(`/api/judges/crime/all/${id}`,{
      method: 'GET',
         credentials: 'include', // Ensures cookies are sent with the request
         headers: {

@@ -1,3 +1,5 @@
+import { apiFetch } from '../api';
+
 const MisconductSearch = 'misconduct/landing'
 
 
@@ -19,7 +21,7 @@ export const fetchMisconductSearchThunk = (payload) => async dispatch => {
     // Turn payload object into query string
     const queryString = new URLSearchParams(payload).toString();
 
-    const response = await fetch(`/api/county/misconduct?${queryString}`, {
+    const response = await apiFetch(`/api/county/misconduct?${queryString}`, {
         method: 'GET',
         credentials: 'include',
         headers: {
