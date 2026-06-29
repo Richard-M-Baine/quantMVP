@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'quantmvp-production-6066.up.railway.app'
+    'https://quantmvp-production.up.railway.app/api/county/landing'
   ],
   credentials: true
 }));
