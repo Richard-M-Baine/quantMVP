@@ -53,7 +53,7 @@ function ContactComponent() {
       <div className="contact-inner">
         <h2 className="contact-heading">Get in touch</h2>
         <p className="contact-subtext">
-          Fill in the form below and we'll get back to you as soon as possible.
+          Fill in the form below and we'll get back to you as soon as possible.  I am writing random crap here to prove to you this is not ai generated. It might convince you but it might also not.
         </p>
 
         <div className="contact-form">
