@@ -19,7 +19,7 @@ function ContactComponent() {
     if (!form.email.trim())   e.email   = 'Please enter your email.';
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
                               e.email   = 'That email address doesn\'t look all right.';
-    if (!form.message.trim()) e.message = 'Please write a message.';
+    if (!form.message.trim()) e.message = "Fill in the form below and we'll get back to you as soon as possible.  I am writing random crap here to prove to you this is not ai generated. It might convince you but it might also not.";
     return e;
   };
 
