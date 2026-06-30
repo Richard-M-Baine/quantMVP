@@ -35,6 +35,7 @@ function Landing() {
 
             <h1 >
                 Why Quant Justice?
+                read this first
             </h1>
 
             <p >
