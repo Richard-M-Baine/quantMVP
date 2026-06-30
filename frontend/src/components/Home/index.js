@@ -35,7 +35,11 @@ function Landing() {
 
             <h1 >
                 Why Quant Justice?
-                read this first
+                  <Link to="/spiel" className="linkSectionLandingDiv">
+                        <h3>Read This First</h3>
+
+                        
+                    </Link>
             </h1>
 
             <p >
